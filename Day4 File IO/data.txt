@@ -1,0 +1,6 @@
+파일저장 테스트
+file_get_contents
+fread
+stream_get_contents
+feof / fgetsfread()
+fread()
