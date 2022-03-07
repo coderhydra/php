@@ -5,7 +5,7 @@
 </head>
 <body>
 <h1>join PHP!</h1>
-<form method="post" action="/Day3User/join_result.php">
+<form method="post" action="/Day3%20User/join_result.php">
     <input type="text" name="input_uid"><br>
     <input type="text" name="input_pwd"><br>
     <input type="text" name="input_name"><br>

@@ -49,26 +49,6 @@ catch(PDOException $ex){
 }
 $connect = null;
 ?>
-<!--Insert-->
 <?php
-//date_default_timezone_set('Asia/Seoul');
-$host = "localhost";
-$user = "root";
-$pw = "52273178";
-$dbName = "study_db";
-$conn = new mysqli($host, $user, $pw, $dbName);
-
-/* DB 연결 확인 */
-if($conn){ echo "Connection established"."<br>"; }
-else{ die( 'Could not connect: ' . mysqli_error($conn) ); }
-
-/* INSERT 예제 */
-$sql = "INSERT INTO user(uid, pwd) VALUES('shine','30')";
-$insert_res = mysqli_query($conn, $sql); //여기입력된다.
-
-//if($insert_res) { echo "insert success!"; }
-//else { echo "failure"; }
-//
-
 mysqli_close($conn);
 ?>
