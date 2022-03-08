@@ -19,7 +19,7 @@
 
     ?>
     <button onclick=location.href="./list.php">list</button>
-    <button onclick=location.href="./edit.php">edit</button>
+    <button onclick=location.href="./edit.php?id=<?php echo $id ?>">edit</button>
     <div>
        <div>
         <span><?php  echo $row['id']; ?></span>
