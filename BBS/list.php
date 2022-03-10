@@ -12,6 +12,7 @@
 </head>
 <body>
     <h1>BBS</h1>
+    <button onclick=location.href="./login_form.php">login</button><br>
     <table id="table">
         <thead class="head">
             <tr>

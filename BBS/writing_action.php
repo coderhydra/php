@@ -1,6 +1,7 @@
 <?php
+session_start();
 $title=$_POST['title'];
-$writer=$_POST['writer'];
+$writer=$_SESSION["uid"];
 $content=$_POST['content'];
 // mysql 연결
 $host = "localhost";
@@ -13,7 +14,7 @@ $conn = new mysqli($host, $user, $pw, $dbName);
 $sql = "INSERT INTO BBS(title,writer,content,publish) VALUES('$title','$writer','$content',NOW())";
 if ($conn->query($sql) === TRUE) { ?>
 <script>
-    alert("<?php echo "alert: 게시글이 등록되었습니다." ?>");
+    alert("<?php echo "alert: 게시글이 등록되었습니다.작성자:".$_SESSION["uid"] ?>");
     location.replace("<?php echo './list.php' ?>");
 </script>
 <?php

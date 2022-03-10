@@ -8,7 +8,6 @@
     <form method="post" action="writing_action.php">
         <h1>writing</h1>
         <h3>title<input type="text" name="title"></h3>
-        <h3>writer<input type="text" name="writer"></h3>
         <h3>content</h3><br>
         <textarea rows="7" cols="33" name="content"></textarea></br>
         <button type="submit">submit</button>

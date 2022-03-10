@@ -13,6 +13,9 @@
     $pw = '52273178';
     $dbName = 'study_db';
     $conn = new mysqli($host, $user, $pw, $dbName);
+    //view_cnt
+    $view_cnt_sql = "UPDATE BBS set view_cnt = view_cnt + 1 WHERE id = $id";
+    $conn->query($view_cnt_sql);
     $sql = "SELECT * FROM BBS WHERE id=$id";
     $result = mysqli_query($conn, $sql);
     while($row = mysqli_fetch_array($result)){
